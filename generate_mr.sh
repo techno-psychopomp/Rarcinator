@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the repository name, branch name, and commit message
-repository="Rarcinator"
-branch="main"
+repository="your-repository"
+branch="your-branch"
 commit_message=""
 
 # Add changes to the commit
