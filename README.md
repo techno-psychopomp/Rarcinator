@@ -5,7 +5,7 @@ Rarcinator is a Python application that utilizes OpenAI to automatically correct
 ## Features
 
 - Grammar Correction: Rarcinator leverages OpenAI's powerful language model to identify and fix grammatical errors in your code and documentation.
-- Spelling Correction: Is utilizes OpenAI's language model to detect and correct spelling mistakes in your repository files.
+- Spelling Correction: It utilizes OpenAI's language model to detect and correct spelling mistakes in your repository files.
 - Language Support: It supports various programming languages and file formats, ensuring that all parts of your codebase are thoroughly checked.
 
 
