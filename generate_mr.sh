@@ -25,8 +25,8 @@ git commit -m "$commit_message"
 
 # Create a Pull Request
 #response=$(curl -X POST -H "Authorization: Bearer your-access-token" \
-  -d '{"title": "'"$commit_message"'", "head": "'"$branch"'", "base": "master"}' \
-  https://api.github.com/repos/your-username/$repository/pulls)
+#  -d '{"title": "'"$commit_message"'", "head": "'"$branch"'", "base": "master"}' \
+# https://api.github.com/repos/your-username/$repository/pulls)
 
 # Extract the pull request number from the response
 #pull_request_number=$(echo $response | jq -r '.number')
@@ -35,4 +35,4 @@ git commit -m "$commit_message"
 #pull_request_url="https://github.com/your-username/$repository/pull/$pull_request_number"
 
 # Output the pull request URL
-echo "Pull Request created: $pull_request_url"
+#echo "Pull Request created: $pull_request_url"

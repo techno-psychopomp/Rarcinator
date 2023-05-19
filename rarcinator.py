@@ -42,5 +42,5 @@ def main(argv):
 if __name__ == "__main__":
    main(sys.argv[1:])
 
-exit_code = subprocess.call('./generate_mr.sh')
-print(exit_code)
+commit_merge_push = subprocess.call('./generate_mr.sh')
+print(commit_merge_push)
