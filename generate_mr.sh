@@ -25,7 +25,7 @@ sha=$(git rev-parse HEAD)
 
 # Create a Pull Request
 response=$(curl -X POST -H "Authorization: Bearer $GH_TOKEN" \
-  -d '{"title": "'"$commit_message"'", "head": "'"$branch"'", "base": "master"}' \
+  -d '{"title": "'"$commit_message"'", "head": "'"$branch"'", "base": "main"}' \
  https://api.github.com/repos/techno-psychopomp/$repository/pulls)
 
 # Extract the pull request number from the response
