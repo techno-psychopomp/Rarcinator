@@ -26,3 +26,4 @@ To start using Rarcinator, follow the instructions below:
 ## RoadMap
 - Support for multiple files: Be able to scan the whole repository or a selection of files.
 - Automated Processing: The application scans your repository files and suggests corrections for grammar and spelling errors automatically.
+- Improvements for accessibility 
