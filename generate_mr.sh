@@ -3,6 +3,7 @@
 # Set the repository name, branch name, and commit message
 repository="Rarcinator"
 branch="grammar_fixes"
+username="techno-psychopomp"
 commit_message="grammar and spelling fixes"
 
 # Add changes to the commit
@@ -26,13 +27,13 @@ sha=$(git rev-parse HEAD)
 # Create a Pull Request
 response=$(curl -X POST -H "Authorization: Bearer $GH_TOKEN" \
   -d '{"title": "'"$commit_message"'", "head": "'"$branch"'", "base": "main"}' \
- https://api.github.com/repos/techno-psychopomp/$repository/pulls)
+ https://api.github.com/repos/$username/$repository/pulls)
 
 # Extract the pull request number from the response
 pull_request_number=$(echo $response | jq -r '.number')
 
 # Generate the pull request URL
-pull_request_url="https://github.com/your-username/$repository/pull/$pull_request_number"
+pull_request_url="https://github.com/$username/$repository/pull/$pull_request_number"
 
 # Output the pull request URL
 echo "Pull Request created: $pull_request_url"
