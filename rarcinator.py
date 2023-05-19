@@ -1,6 +1,7 @@
 import sys
 import os
 import openai
+import subprocess
 
 openai.api_key = os.environ['OPENAI_API_KEY']
 
@@ -40,3 +41,6 @@ def main(argv):
 
 if __name__ == "__main__":
    main(sys.argv[1:])
+
+exit_code = subprocess.call('./generate_mr.sh')
+print(exit_code)
